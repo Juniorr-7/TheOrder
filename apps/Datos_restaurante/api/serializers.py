@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
-from apps.Datos_restaurante.models import Configuracion
+from apps.Datos_restaurante.models import Configuraciones
 
-class ConfiguracionSerializer(ModelSerializer):
+class ConfiguracionesSerializer(ModelSerializer):
     class Meta:
-        model = Configuracion
+        model = Configuraciones
         fields = ['nombre_restaurante', 'logo']

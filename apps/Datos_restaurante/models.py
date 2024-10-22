@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Configuracion(models.Model):
+class Configuraciones(models.Model):
     nombre_restaurante = models.CharField(max_length=100)
     logo = models.ImageField(upload_to='logos/')
 
