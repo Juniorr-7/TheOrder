@@ -1,11 +1,11 @@
 from django.db import models
 from apps.pedido.models import Pedido
 from apps.detalles.models import DetallePedido
-from apps.Datos_restaurante.models import Configuracion
+from apps.Datos_restaurante.models import Configuraciones
 
 # Create your models here.
 class Facturacion(models.Model):
-    restaurante = models.ForeignKey(Configuracion, on_delete=models.SET_NULL, null=True)
+    restaurante = models.ForeignKey(Configuraciones, on_delete=models.SET_NULL, null=True)
     pedido = models.ForeignKey(Pedido, on_delete=models.SET_NULL, null=True)
     detalle = models.ForeignKey(DetallePedido, on_delete=models.SET_NULL, null=True)
     total_a_pagar = models.DecimalField(max_digits=10, decimal_places=2, default=0)

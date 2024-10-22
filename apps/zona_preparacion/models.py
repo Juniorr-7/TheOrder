@@ -1,7 +1,6 @@
 from django.db import models
 from apps.pedido.models import Pedido
 from apps.productos.models import Producto
-from apps.detalles.models import DetallePedido
 
 # Create your models here.
 class ZonaPreparacion(models.Model):
